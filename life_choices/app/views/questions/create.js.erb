@@ -1,0 +1,3 @@
+$('#new_question').slideUp();
+$('#new_question_link').show();
+$('.reel').append("<article><a class='image featured'><%= j image_tag 'pic01.jpg' %></a><header><h3>Would you rather...</h3></header><a><p><%= j @question.option_one %></p></a><h3>Or</h3><br><a><p><%= j @question.option_two %></p></a></article>")
