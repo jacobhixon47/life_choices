@@ -23,6 +23,28 @@ class QuestionsController < ApplicationController
     end
   end
 
+  def vote_one
+    @question = Question.find(params[:id])
+    @question.chose_one += 1
+    if @question.save
+      respond_to do |format|
+        format.html { redirect_to questions_path }
+        format.js
+      end
+    end
+  end
+
+  def vote_two
+    @question = Question.find(params[:id])
+    @question.chose_two += 1
+    if @question.save
+      respond_to do |format|
+        format.html { redirect_to questions_path }
+        format.js
+      end
+    end
+  end
+
   def destroy
     @question = Question.find(params[:id])
     @question.destroy

@@ -1,6 +1,6 @@
 <section id="banner">
   <header>
-    <h2>Hi. You're looking at <strong>Helios</strong>.</h2>
+    <h2>Ask and you shall recieve.</h2>
     <%= link_to "New Question", new_question_path, id: 'new_question_link', remote: true %>
   </header>
 </section>
@@ -15,10 +15,10 @@
           <header>
             <h3>Would you rather...</h3>
           </header>
-          <a><p><%= question.option_one %></p></a>
+          <a><p><%= link_to question.option_one, vote_one_path(question), remote: true, id: "#{question.id}-option-one" %><span id='<%= question.id %>-one'></span></p></a>
           <h3>Or</h3>
           <br>
-          <a><p><%= question.option_two %></p></a>
+          <a><p><%= link_to question.option_two, vote_two_path(question), remote: true, id: "#{question.id}-option-two" %><span id='<%= question.id %>-two'></span></p></a>
         </article>
       <% end %>
     </div>
