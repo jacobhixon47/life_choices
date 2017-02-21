@@ -1,0 +1,10 @@
+<article>
+  <a class="image featured"><%= image_tag "pic01.jpg" %></a>
+  <header>
+    <h3>Would you rather...</h3>
+  </header>
+  <a><p><%= link_to @question.option_one, vote_one_path(@question), remote: true, id: "#{@question.id}-option-one" %><span id='<%= @question.id %>-one'></span></p></a>
+  <h3>Or</h3>
+  <br>
+  <a><p><%= link_to @question.option_two, vote_two_path(@question), remote: true, id: "#{@question.id}-option-two" %><span id='<%= @question.id %>-two'></span></p></a>
+</article>
