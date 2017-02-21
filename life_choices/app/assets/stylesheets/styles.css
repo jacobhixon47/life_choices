@@ -3,5 +3,10 @@ span.forward, span.backward {
 }
 
 .reel {
-  margin-top: 25px!important;
+  margin-top: 25px !important;
+}
+
+.form1 {
+  padding-right: 1%;
+  padding-left: 1%;
 }

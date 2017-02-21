@@ -1,5 +1,6 @@
 
-$('#<%= @question.id %>-one').append('<%= j @question.option_one %> - <%= @question.chose_one %>');
-$('#<%= @question.id %>-two').append('<%= j @question.option_two %> - <%= @question.chose_two %>');
 $('#<%= @question.id %>-option-one').remove();
 $('#<%= @question.id %>-option-two').remove();
+
+$('#<%= @question.id %>-one').append('<%= j @question.option_one %> - <%= @question.chose_one %>');
+$('#<%= @question.id %>-two').append('<%= j @question.option_two %> - <%= @question.chose_two %>');

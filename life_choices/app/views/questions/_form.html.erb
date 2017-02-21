@@ -1,4 +1,5 @@
-<%= form_for @question, remote: true do |f| %>
+<div class="form1">
+  <%= form_for @question, remote: true do |f| %>
   <p>
     <%= f.label :option_one %>
     <%= f.text_field :option_one %>
@@ -10,4 +11,5 @@
   <p>
     <%= f.submit %>
   </p>
-<% end %>
+  <% end %>
+</div>

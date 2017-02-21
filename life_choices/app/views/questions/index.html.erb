@@ -6,9 +6,9 @@
 </section>
 
 <!-- Carousel -->
-<% if @questions.any? %>
-  <section class="carousel">
-    <div class="reel">
+<section class="carousel">
+  <div class="reel">
+    <% if @questions.any? %>
       <% @questions.each do |question| %>
         <article>
           <a class="image featured"><%= image_tag "pic01.jpg" %></a>
@@ -22,5 +22,5 @@
         </article>
       <% end %>
     </div>
-  </section>
-<% end %>
+  <% end %>
+</section>

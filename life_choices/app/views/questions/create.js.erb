@@ -1,3 +1,5 @@
-$('#new_question').slideUp();
+$('#new_question').slideUp(function() {
+  $('.carousel').slideDown();
+});
 $('#new_question_link').show();
 $('.reel').append('<%= j render("question") %>');
