@@ -1,3 +1,7 @@
 span.forward, span.backward {
   background-color: transparent !important;
 }
+
+.reel {
+  margin-top: 25px!important;
+}

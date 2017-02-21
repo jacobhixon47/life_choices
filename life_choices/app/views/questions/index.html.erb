@@ -12,9 +12,12 @@
         <article>
           <a class="image featured"><%= image_tag "pic01.jpg" %></a>
           <header>
-            <h3><a>Would you rather...</a></h3>
+            <h3>Would you rather...</h3>
           </header>
-          <p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>
+          <a><p><%= question.option_one %></p></a>
+          <h3>Or</h3>
+          <br>
+          <a><p><%= question.option_two %></p></a>
         </article>
       <% end %>
     </div>
